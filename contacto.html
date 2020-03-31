@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header-contacto">
+        <div class="barra barra-contacto">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="anuncios.html">Anuncios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>   
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+
+        <img src="img/destacada3.jpg" alt="imagen destacada">
+
+        <h2>Llená el formulario de contacto</h2>
+
+        <form action="contacto.html" method="post">
+        <div class="contenedor-formulario">
+            <div class="contenedor-informacion-personal">
+            <fieldset>
+            <legend>Informacion personal</legend>
+
+            <div class="contenedor-nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+            </div>
+
+            <div class="contenedor-email">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Tu email">
+            </div>
+
+            <div class="contenedor-telefono">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Tu telefono">
+            </div>
+
+            <div class="contenedor-mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            </fieldset>
+        </div>
+
+        <div class="contenedor-propiedad">
+            <fieldset>
+            <legend>Informacion sobre propiedad</legend>
+            <div class="contenedor-vende-o-compra">
+                <label for="vende-o-compra">Vende o compra:</label>
+                <select name="vende-o-compra" id="vende-o-compra">
+                    <option value="" selected disabled>-- Seleccione --</option>
+                    <option value="vende">Vende</option>
+                    <option value="compra">Compra</option>
+                </select>
+            </div>
+
+            <div class="contenedor-presupuesto">
+                <label for="presupuesto">Presupuesto:</label>
+                <input type="number" name="presupuesto" id="presupuesto" min="0" step="1000">
+            </div>
+            </fieldset>
+        </div>
+
+        <div class="contenedor-contacto">
+            <fieldset>
+            <legend>Contacto</legend>
+            <p>Cómo desea ser contactado</p>
+
+            <div class="contenedor-telefono-contacto">
+                <label for="telefono-contacto">Teléfono</label> <br>
+                <input type="radio" name="forma-de-contacto" id="telefono-contacto" value="contacto:telefono">
+            </div>
+            
+            <div class="contenedor-email-contacto">
+                <label for="email-contacto">E-mail</label> <br>
+                <input type="radio" name="forma-de-contacto" id="email-contacto" value="contacto:email">
+            </div>
+
+            <p>Si eligió telefono, elija fecha y hora</p>
+
+            <div class="contenedor-fecha">
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+
+            <div class="contenedor-hora">
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora" value="--:--" min="07:00" max="20:00">
+            </div>
+            <div class="contenedor-submit">
+                <input type="submit" value="Enviar">
+            </div>
+            </fieldset>
+        </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <nav>
+            <ul>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="anuncios.html">Anuncios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            </nav>
+            <div class="copyright">
+            <p>Todos los derechos reservados &copy;</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/20ee0b6ed7.js" crossorigin="anonymous"></script>
+</body>
+</html>

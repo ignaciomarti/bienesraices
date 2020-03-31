@@ -1,0 +1,662 @@
+/* Globales */
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 1.1em;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+nav ul li a:hover{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color:black
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+img{
+    max-width: 100%;
+}
+/* ESPECIFICOS */
+
+/* HEADER */
+header {
+    background-image: url("/img/header.jpg");
+    height: 100vh;
+    min-height: 600px;
+    background-position: center center;
+    background-size: cover;
+    margin: auto;
+}
+
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+    padding-left: 10%;
+    padding-bottom: 1em;
+    max-width: 18em;
+    line-height: 2;
+    font-size: 2.5em;
+}
+
+.contenedor{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* MAS SOBRE NOSOTROS */
+
+.nosotros h2{
+    text-align: center;
+    font-weight: 300;
+}
+
+.nosotros{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.nosotros div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nosotros div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotros div div img {
+    width: 75px;
+}
+
+.nosotros div div h3{
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.nosotros div div p{
+    text-align: center;
+    width: 90%;
+    line-height: 1.5;
+}
+
+/* MAIN */
+
+/*
+main h2 {
+    text-align: center;
+}
+
+main div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+}
+
+main div div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-basis: 33.3%;
+    
+}
+
+main div div h3{
+    font-weight: 300;
+}
+
+main div div img{
+    max-width: 100%;
+}
+
+.precio{
+    color:green;
+}
+
+main div div button{
+    background-color: orange;
+    color: white;
+    width: 100%;
+    height: 30px;
+
+}*/
+main h2 {
+    text-align: center;
+}
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.anuncio{
+    flex-basis: calc(33.3% - 0.9em);
+    background-color: #f5f5f5;
+    border: 1px solid #b5b5b5;
+}
+
+.precio{
+    color:#71B100;
+    font-weight: 700;
+}
+
+.iconos-caracteristicas{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.iconos-caracteristicas li{
+    display: flex;
+}
+
+.iconos-caracteristicas li img {
+    margin-right: 10px;
+}
+
+.contenido-anuncios{
+    margin-left: 5%;
+}
+
+main div .contenido-anuncios button{
+    background-color: #E08709;
+    color: white;
+    width: 95%;
+    height: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.ver-todas{
+    background-color: #71B100;
+    text-transform: uppercase;
+    color: white;
+    height: 30px;
+    border: none;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+.contenedor>a {
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 2em;
+    font-weight: 700;
+}
+
+/* ENCONTRA LA CASA DE TUS SUEÑOS */
+
+.suenos{
+    background-image: url(../img/encuentra.jpg);
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    background-position: center center;
+}
+
+.suenos div{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.suenos h2{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.suenos p{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.suenos button{
+    background-color: #E08709;
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    padding: 0.8em;
+}
+
+/* BLOG */
+.contenedor-blog{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+/*
+.blog{
+    display: flex;
+    justify-content: space-between;   
+}
+*/
+.blog{
+    flex-basis: 60%;
+}
+
+.testimoniales{
+    flex-basis: calc(40% - 2em);
+}
+
+.contenedor-blog{
+    margin-bottom: 2.5em;
+}
+
+.blog h2{
+    text-align: center;
+}
+
+.articulos article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.articulos article:last-child{
+    margin-bottom: 0;
+}
+
+.articulos article .contenedor-imagen{
+    flex-basis: 40%;
+}
+
+.articulos article .contenedor-escritura{
+    flex-basis: calc(60% - 2em);
+}
+
+.contenedor-escritura h3{
+    margin: 0;
+}
+
+.contenedor-escritura h3::after{
+    content: '';
+    display: block;
+    background-color: #71B100;
+    width: 5em;
+    height: .2em;
+    margin-top: .2em;
+}
+
+em{
+    color: #E08709;
+}
+
+.datos-escritura{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-testimoniales{
+    background-color: #71B100;
+    padding: 1em;
+    border-radius: 5%;
+}
+
+.contenido-testimoniales blockquote{
+    font-size: 1.1em;
+    line-height: 2.5;
+    color: white;
+    position: relative;
+    padding-left: 3em;
+}
+
+.contenido-testimoniales p{
+    font-size: 1.0em;
+    color: white;
+    font-weight: 700;
+    text-align: right;
+}
+
+.contenido-testimoniales blockquote::before{
+    content: "";
+    background-image: url("/img/comilla.svg");
+    width: 3em;
+    height: 3em;
+    display: block;
+    position: absolute;
+    left: -1.2em;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #333333;
+}
+
+.contenedor-footer{
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    color: white;
+    text-align: right;
+}
+
+/* NOSOTROS */
+
+.header-nosotros, .header-anuncios, .header-blog, .header-contacto{
+    background-image: none;
+    background-color: #333333;
+    min-height: 100px;
+    height: 100px;
+}
+
+.main-nosotros{
+    margin: 0 10%;
+}
+
+.main-nosotros h2{
+    font-weight: 300;
+}
+
+.main-nosotros h4{
+    font-weight: 700;
+}
+
+.contenedor-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-nosotros{
+    max-width: 50%;
+}
+
+.experiencia{
+    max-width: calc(50% - 2em);
+}
+
+
+.experiencia p{
+    margin-top: 3.5em;
+    line-height: 2;
+}
+
+.experiencia p:last-child{
+    margin-top: 0;
+}
+
+.nosotros-nosotros{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+/* ANUNCIOS */
+
+.anuncio-anuncio{
+    flex: 0 0 calc(33.3% - 1em); /* flex grow, flew shrink flex-bassis*/
+    flex-basis: calc(33.3% - 0.9em);
+    background-color: #f5f5f5;
+    border: 1px solid #b5b5b5;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.anuncio-anuncio:last-child{
+    margin-right: 0;
+}
+
+.anuncio-anuncio:nth-child(4), .anuncio-anuncio:nth-child(5), .anuncio-anuncio:nth-child(6){
+    margin-bottom: 2em;
+}
+
+.contenedor-anuncios-anuncios{
+    flex-wrap: wrap;
+}
+
+/* ANUNCIO */
+
+.main-anuncio h2{
+    font-weight: 300;
+}
+
+.contenido-anuncio{
+    margin: 0 20%;
+}
+.resumen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-anuncio p{
+    line-height: 2;
+}
+.resumen .iconos-caracteristicas li{
+    margin-right: 4em;
+}
+
+.resumen .iconos-caracteristicas li:last-child{
+    margin-right: 0;
+}
+
+/* BLOG */
+
+.main-blog{
+    margin: 0 20%;
+}
+
+.articulo-blog{
+    display: flex;
+    justify-content: space-between;
+}
+
+.articulo-blog .contenedor-imagen{
+    flex-basis: 30%;
+}
+
+.articulo-blog .contenedor-escritura{
+    flex-basis: calc(70% - 1em);
+}
+
+.articulo-blog{
+    margin-bottom: 2em;
+}
+
+/* VISTA BLOG */
+.contenedor-vista-blog{
+    margin: 0 20%;
+}
+
+.contenedor-vista-blog p{
+    line-height: 2;
+}
+
+.contenedor-imagen-vista-blog{
+    width: 100%;
+}
+
+.contenedor-imagen-vista-blog img{
+    max-height: 100vh;
+    height: 80vh;
+    width: 100%;
+}
+
+/* CONTACTO */
+form{
+    margin: 5vh 20%;
+}
+input, textarea, select{
+    background-color: #e1e1e1;
+}
+
+form .contenedor-contacto input[type="submit"]{
+    background-color: #71B100;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.9em 1.5em;
+    font-weight: 800;
+    margin-top: 3em;
+    font-size: 0.8em;
+}
+
+form .contenedor-contacto input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.contenedor-submit{
+    display: flex;
+    flex-basis: 20%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 0.9em;
+}
+
+legend{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.contenedor-propiedad{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+input, textarea, select{
+    padding: 0.4em 0.5em;
+    padding-left: 0.5em;
+    border: none;
+}
+
+.contenedor-nombre{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.contenedor-nombre label, .contenedor-email label, .contenedor-telefono label, .contenedor-mensaje label{
+    padding-bottom: .5em;
+}
+
+.contenedor-email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.contenedor-telefono{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.contenedor-mensaje{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.contenedor-vende-o-compra{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-vende-o-compra label{
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.contenedor-presupuesto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-presupuesto label{
+    padding-bottom: .5em;
+    padding-top: 1em;
+}
+
+.contenedor-telefono-contacto label{
+    margin-bottom: 1em;
+}
+
+.contenedor-email-contacto label{
+    margin-bottom: 2em;
+}
+
+
+.contenedor-fecha, .contenedor-hora{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-fecha label, .contenedor-hora label{
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+

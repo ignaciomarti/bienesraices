@@ -3,62 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienes Raices</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Anuncio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header-anuncios">
-        <div class="barra barra-anuncios">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="anuncios.html">Anuncios</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>   
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
     </header>
 
-    <main class="main-anuncio">
-    <h2>Casa en Venta en la Playa</h2>
-    <div>
-    <img src="img/destacada.jpg" alt="foto del anuncio">
-    </div>
-    <div class="contenido-anuncio">
-    <div class="resumen">
-    <p class="precio">$3.000.000</p>
-    <ul class="iconos-caracteristicas">
-        <li><img src="img/icono_wc.svg" alt="baños"><p>3</p></li>
-        <li><img src="img/icono_estacionamiento.svg" alt="estacionamientos"><p>3</p></li>
-        <li><img src="img/icono_dormitorio.svg" alt="cuartos"><p>2</p></li>
-    </ul>
-    </div>
+    <h1 class="fw-300 centrar-texto">Casa en Venta frente al bosque</h1>
+    <img src="img/destacada.jpg" alt="Imagen Anuncio">
 
-    <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem obcaecati doloremque molestias laboriosam voluptatibus iure nisi dignissimos amet! Voluptatum cupiditate, modi saepe quisquam rem aperiam delectus, laborum labore numquam repudiandae accusantium, atque natus adipisci amet veritatis possimus exercitationem. Esse itaque beatae voluptas consectetur totam earum aperiam enim harum officia suscipit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus excepturi beatae, ipsam consectetur illo voluptas. Nobis, architecto laudantium doloribus alias eos adipisci voluptas accusantium enim. Corrupti, aperiam! Delectus perspiciatis quos modi iusto. Dolor, officia ratione. Voluptatem hic eius, laboriosam voluptates minus aliquam praesentium ex, accusamus molestiae possimus, aperiam illo?</p>
-    </div>
-    </div>
-</main>
-
-    <footer>
-        <div class="contenedor-footer">
-            <nav>
-            <ul>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="anuncios.html">Anuncios</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+    <main class="contenedor seccion contenido-centrado">
+        <div class="resumen-propiedad">
+            <p class="precio">$3,000,000</p>
+            <ul class="iconos-caracteristicas">
+                <li>
+                    <img src="img/icono_wc.svg" alt="icono wc">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img src="img/icono_estacionamiento.svg" alt="icono autos">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img src="img/icono_dormitorio.svg" alt="icono habitaciones">
+                    <p>4</p>
+                </li>
             </ul>
+        </div><!--.resumen-propiedad-->
+
+        <p>Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie. Proin tristique commodo felis, sed auctor elit auctor pulvinar. Nunc porta, nibh quis convallis sollicitudin, arcu nisl semper mi, vitae sagittis lorem dolor non risus. Vivamus accumsan maximus est, eu mollis mi. Proin id nisl vel odio semper hendrerit. Nunc porta in justo finibus tempor. Suspendisse lobortis dolor quis elit suscipit molestie. Sed condimentum, erat at tempor finibus, urna nisi fermentum est, a dignissim nisi libero vel est. Donec et imperdiet augue. Curabitur malesuada sodales congue. Suspendisse potenti. Ut sit amet convallis nisi.</p>
+
+        <p>Aliquam lectus magna, luctus vel gravida nec, iaculis ut augue. Praesent ac enim lorem. Quisque ac dignissim sem, non condimentum orci. Morbi a iaculis neque, ac euismod felis. Fusce augue quam, fermentum sed turpis nec, hendrerit dapibus ante. Cras mattis laoreet nibh, quis tincidunt odio fermentum vel. Nulla facilisi.</p>
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            <div class="copyright">
-            <p>Todos los derechos reservados &copy;</p>
-            </div>
+            <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/20ee0b6ed7.js" crossorigin="anonymous"></script>
 </body>
 </html>
